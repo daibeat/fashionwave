@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <meta charset="UTF-8">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+   <header>
+     <div class="header">
+     <img id="find" src="images/mapicon.jpg" alt="find store"/>
+     <p>find your store</p>
+     <h1>Fashion Wave</h1>
+    </div>
+     <div class="topnav"> 
+      <a href="index.html">home</a>
+       <!-- This is where the dropdown menu starts -->
+     <div>
+       <div class="dropdown">
+         <button class="dropbtn">products</button>
+           <div class="dropdown-content">  
+            <div class="row-drop">
+                <div class="column">
+              <a href="product_man.html">men</a>
+              <a href="product_woman.html">women</a>
+              <a href="#sale">sale</a>
+             </div>
+         </div>
+        </div>
+       </div> 
+     </div>
+     <!-- This is where the dropdown menu ends -->
+     <!-- This is where the dropdown menu ends -->
+     <img id="cart" src="images/basket_black.png" href="#cart"></a>
+     <a id="login" href="login.html">login</a>
+     <a id="signup"  href="signup.html">sign up</a>
+     <a id="search" href="search.html">search</a>  
+     <img id="search_icon" src="images/search_icon.png" alt="search"/> 
+
+    </header>
+
+    <!--Survey Form Starts-->
+
+    <main>
+        <div class="row">
+               <div class="column1"></div>
+               
+               
+            <div class="column2-sur">
+                 <p>Please fill up the survey. Thank you.</p>
+                 <br>
+                <form name="myForm"  onsubmit="return validateForm()" method="post">    
+   
+                    <label for="first-name">How did you hear about us?</label>
+                    <input id="firstname"  type="text" name="first-name" required>
+   
+                    <br>
+                    <br>
+           
+                    <label for="last-name">How likely are you to recommend our website to a friend?</label>
+                    <input id="lastname" type="text" name="last-name" required>
+   
+                    <br>
+                    <br>
+           
+                    <label  for="phone">How easy was it to use our website? Did you have any problems?
+                    </label>
+                    <input id="phone" type="text" name="phone" required>
+                    <br>
+                    <br>
+   
+           
+                    <label  for="email">How did your experience compare to your expectations?</label>
+                    <input id="email" type="text" name="email" required>
+   
+                    <br>
+                    <br>
+
+                    <label  for="email">If you could change one thing about our website, what would it be?</label>
+                    <input id="email" type="text" name="email" required>
+                    
+                
+                    <br>
+                    <br>
+                                  
+                     <input type="reset" value="Reset">
+                     <input type="submit" value="Submit">
+                </form>           
+             </div>
+               
+            <div class="column3"></div>
+        </div>
+          
+       
+       </main>
+    
+ 
+ 
+
+    <!--Footer -->
+
+   <footer>
+    <div class="footer">
+      <a href="contact.html">contact</a>
+    <a href="survey.html">survey</a>
+    <a id="footer_right"  href="#privacypolicy">privacy policy</a>
+    <a id="footer_right"  href="#disclaimer">disclaimer</a>
+    <a id="footer_right" >©Fashion Wave 2020</a>
+   </div>
+  </footer>
+
+ 
+   
+</body>
+</html>

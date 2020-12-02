@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <meta charset="UTF-8">
+    <title>fashionwave</title>
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+   <header>
+     <div class="header">
+     <img id="find" src="images/mapicon.jpg" alt="findstore"/>
+     <p>find your store</p>
+     <h1>Fashion Wave</h1>
+    </div>
+     <div class="topnav"> 
+      <a href="index.html">home</a>
+       <!-- This is where the dropdown menu starts -->
+     <div>
+       <div class="dropdown">
+         <button class="dropbtn">products</button>
+           <div class="dropdown-content">  
+            <div class="row-drop">
+              <div class="column">
+              <a href="product_man.html">men</a>
+              <a href="product_woman.html">women</a>
+              <a href="#sale">sale</a>
+             </div>
+         </div>
+        </div>
+       </div> 
+     </div>
+     <!-- This is where the dropdown menu ends -->
+     <img id="cart" src="images/basket_black.png" href="#cart" alt="basket"></a>
+     <a id="login" href="login.html">login</a>
+     <a id="signup"  href="signup.html">sign up</a>
+     <a id="search" href="search.html">search</a>  
+     <img id="search_icon" src="images/search_icon.png" alt="search"/> 
+
+    </header>
+
+    <!--Sign Up Form Starts-->
+    
+
+ <main>
+     <div class="row">
+            <div class="column1"></div>
+            
+            
+         <div class="column2">
+              <p>To sign up, please fill up the form below. Thank you.</p>
+              <br>
+             <form name="myForm"  onsubmit="return validateForm()" method="post">    
+              
+                 <label for="country">Country</label>
+                 <select id="country" name="country" required>
+                     <option value="" disabled selected>Select your option</option>
+                     >Please select</option>
+                     <option value="australia">Australia</option>
+                     <option value="canada">Canada</option>
+                     <option value="usa">USA</option>
+                     <option value="spain">Spain</option>
+                     <option value="france">France</option>
+                     <option value="uk">United Kingdom</option>
+                 </select>
+                 <br>
+                 <br>
+
+
+                 <label for="fname">First Name</label>
+                 <input for=firstname" id="firstname"  type="text" name="first-name" required>
+
+                 <br>
+                 
+        
+                 <label for="lname">Last Name</label>
+                 <input for="lastname" id="lastname" type="text" name="last-name" required>
+
+                 <br>
+        
+                 <label  for="phone">Phone Number</label>
+                 <input for="phonenum"  id="phone" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  placeholder="123-45-678" name="phone" required>
+
+                 
+                 <label  for="email">Email Address</label>
+                 <input for="emailad" id="email" type="text" name="email" required>
+
+                
+                 <label for="psw">Password</label>
+                 <input for="password" type="password"  name="psw" required>
+             
+                 <label for="psw-repeat">Repeat Password</label>
+                 <input for="passwordconf" type="password"  name="psw-repeat" required>
+                 <fieldset>
+                  <legend>Select Gender</legend>
+                 <span>Gender (optional):</span> 
+                 <br>
+
+                 <input id="man" type="radio" name="answer" value="man">
+                 <label for="man">Man</label>
+                 <input id="woman" type="radio" name="answer" value="woman">
+                 <label for="woman">Woman</label>
+                 <input id="nonbinary" type="radio" name="answer" value="nonbinary">
+                 <label for="nonbinary">Non binary</label>
+                 <br>
+                 <br>
+                 <br>
+                 </fieldset>        
+                  <input type="reset" value="Reset">
+                  <input type="submit" value="Submit">
+             </form>           
+          </div>
+            
+         <div class="column3"></div>
+     </div>
+       
+    
+    </main>
+ 
+ 
+
+    <!--Footer -->
+
+   <footer>
+    <div class="footer">
+      <a href="contact.html">contact</a>
+    <a href="survey.html">survey</a>
+    <a id="footer_right"  href="#privacypolicy">privacy policy</a>
+    <a id="footer_right2"  href="#disclaimer">disclaimer</a>
+    <a id="footer_right3" >©Fashion Wave 2020</a>
+   </div>
+  </footer>
+
+ <script src="singup_validation"></script>
+ 
+</body>
+</html>
