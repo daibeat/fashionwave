@@ -1,2 +1,2 @@
 # fashionwave
-fictional fashion website 
+Test project for a fashion website 
